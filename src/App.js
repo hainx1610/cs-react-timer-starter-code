@@ -7,16 +7,16 @@ function App() {
 
   return (
     <div className="App container">
-      <h1>Timer</h1>
-      <div className="timer__wrapper">
-        <div className="timer__display">
+      <h1 className="mb-5 text-6xl">Coder's Timer</h1>
+      <div className="timer__wrapper flex flex-col items-center p-3">
+        <div className="timer__display mr-5">
           <p>{formatTime(time)}</p>
         </div>
-        <div className="button__wrapper">
+        <div className="mb-3">
           <button className="button" onClick={stopTimer}>
             Stop
           </button>
-          <button className="button" ref={active} onClick={startTimer}>
+          <button className="button mx-5" ref={active} onClick={startTimer}>
             Start
           </button>
           <button className="button" onClick={resetTimer}>
